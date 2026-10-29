@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-dancing: 'Dancing Script', cursive;
+    --font-great-vibes: 'Great Vibes', cursive;
+    --font-alex-brush: 'Alex Brush', cursive;
+    --font-pinyon: 'Pinyon Script', cursive;
+    --font-cinzel: 'Cinzel', serif;
+    --font-cinzel-deco: 'Cinzel Decorative', serif;
+    --font-marcellus: 'Marcellus', serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-lora: 'Lora', Georgia, serif;
+    --font-playfair: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+    --color-primary: #864e3c;
+    --color-primary-dark: #673727;
+    --color-body: #392922;
+    --color-champagne: #fbe8da;
+    --color-ivory: #faf7f2;
+    --color-gold: #c49b4c;
+    --color-burgundy: #581825;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-lora);
+    color: var(--color-body);
+    background-color: var(--color-ivory);
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-script {
+  font-family: var(--font-dancing);
+}
+
+.font-great-vibes {
+  font-family: var(--font-great-vibes);
+}
+
+.font-alex-brush {
+  font-family: var(--font-alex-brush);
+}
+
+.font-pinyon {
+  font-family: var(--font-pinyon);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-cinzel-deco {
+  font-family: var(--font-cinzel-deco);
+}
+
+.font-marcellus {
+  font-family: var(--font-marcellus);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-lora {
+  font-family: var(--font-lora);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-sans-ui {
+  font-family: var(--font-sans);
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f3ece4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c2b0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a98d76;
+}
+
+/* Luxury Paper Texture Effect */
+.bg-wedding-texture {
+  background-color: #faf7f2;
+  background-image: radial-gradient(#e4d6c7 0.75px, transparent 0.75px);
+  background-size: 18px 18px;
+}
+
+/* Subtle gold shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #c49b4c 0%, #f6e6b4 50%, #c49b4c 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s infinite linear;
+}
+
+/* Safe touch manipulation & WebKit support */
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+/* Safari WebKit Backdrop Filter support */
+.backdrop-blur-xs,
+.backdrop-blur-sm,
+.backdrop-blur-md,
+.backdrop-blur-lg,
+.backdrop-blur-xl {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* Mobile viewport height and safe-area support */
+.min-h-mobile-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.h-mobile-screen {
+  height: 100vh;
+  height: 100dvh;
+}

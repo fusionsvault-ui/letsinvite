@@ -1,0 +1,6 @@
+{
+  "name": "Zareqia - Luxury Digital Wedding Invitations",
+  "description": "Boutique digital wedding invitation studio for Pakistani and South Asian weddings featuring cinematic video reveals, calligraphy, interactive scratch cards, and real-time RSVPs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
